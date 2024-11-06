@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap");
+*{
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.app-container h1{
+    font-weight: 600;
+    font-size: 18px;
+    color: #3498db;
+    border-bottom: 1px solid #f1efef;
+    padding: 10 px 0px;
+}
+.app-container p{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.qr-code-image{
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(138, 137, 137);
+    margin-top: 30px;
+    
+}
+.input-label{
+    display: block;
+    margin-bottom: 8px;
+    color:#3498db;
+    font-size: 15px;
+    font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+input[type="text"]{
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size:16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.generate-button{
+    background-color: #3498db;
+}
+.generate-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+.dowload-button{
+    background-color: #27ae60;
+    margin: 10px;
+}
+.dowload-button:hover{
+    background-color: #219a52;
+}
+.footer{
+    margin-top: 30px;
+    color:#3498db;
+    font-style: bold;
 }
